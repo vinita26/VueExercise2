@@ -1,0 +1,10 @@
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+
+<div id="exercise">
+  <button v-on:click="alertUser">Show Alert!!</button>
+ 
+  <input type="text" v-on:keyup="value= $event.target.value">
+  <p>{{ value }}</p>
+  
+    <input type="text" v-on:keyup.enter="value= $event.target.value">
+  <p>{{ value }}</p>
